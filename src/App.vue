@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-300 font-sans leading-normal tracking-normal mx-auto">
+  <div class="bg-gray-300 font-sans leading-normal tracking-normal mx-auto h-screen">
     <div>
       <DarkNavBar/>
     </div>
@@ -7,7 +7,7 @@
       <router-view/>
     </div>
     <br/>
-    <div class="container w-full mx-auto pt-20 bg-black-alt">
+    <div class="container w-full mx-auto pt-20 bg-black-alt h-auto">
       Normal Button
       <div/>
       <NormalButton/>
@@ -29,13 +29,3 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #0051ff;
-  margin-top: 60px;
-}
-</style>
