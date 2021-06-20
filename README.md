@@ -22,3 +22,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Issues
+## Vue3 not compatible with postcss8
+Install compatibility mode and then upgrade once other dependencies have been upgraded
+```
+npm uninstall tailwindcss postcss autoprefixer
+npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+```
