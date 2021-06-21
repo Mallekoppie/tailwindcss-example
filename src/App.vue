@@ -4,7 +4,7 @@
       <DarkNavBar/>
     </div>
     <div class="pt-20">
-      <div class="p-8">
+      <div class="p-8 flex">
         <div >
           <router-view/>
         </div>

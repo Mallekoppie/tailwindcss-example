@@ -12,6 +12,12 @@
     border-color: #191919;
 }
 
+@layer base {
+    input {
+        @apply bg-gray-900 text-sm text-gray-400 transition border border-gray-800 focus:outline-none focus:border-gray-600 rounded py-1 px-2 appearance-none
+    }
+}
+
 @layer components {
     .custom-button-normal {
         @apply bg-indigo-600 text-white font-bold uppercase text-xs px-4 py-2 rounded shadow hover:bg-indigo-500 mr-1 mb-1 ease-linear transition-all duration-150
