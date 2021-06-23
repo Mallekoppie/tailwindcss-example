@@ -13,7 +13,7 @@
         <div class="flex relative inline-block float-right">
 
           <div class="relative text-sm text-gray-100">
-           <button id="userButton" class="flex items-center focus:outline-none mr-3">
+           <button id="userButton" class="flex items-center focus:outline-none mr-3" @click="toggleDropdown">
                <span
                    class="hidden md:inline-block text-gray-100">Hi, User</span>
               <svg class="pl-2 h-2 fill-current text-gray-100" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
               </svg>
             </button>
             <div id="userMenu"
-                 class="bg-gray-900 rounded shadow-md mt-2 absolute mt-12 top-0 right-0 min-w-full overflow-auto z-30 invisible">
+                 class="bg-gray-900 rounded shadow-md mt-2 absolute mt-6 top-0 right-0 min-w-full overflow-auto z-30" v-if="dropdownOpen">
               <ul class="list-reset">
                 <li><a href="#" class="px-4 py-2 block text-gray-100 hover:bg-gray-800 no-underline hover:no-underline">My
                   account</a></li>
@@ -43,7 +43,7 @@
           </div>
 
 
-          <div class="block lg:hidden pr-4">
+          <div class="block lg:hidden pr-4" >
             <button id="nav-toggle"
                     class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-100 hover:border-teal-500 appearance-none focus:outline-none">
               <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>
@@ -127,6 +127,20 @@
 
 <script>
 export default {
-  name: "DarkNavBar"
+  name: "DarkNavBar",
+  data() {
+    return {
+      dropdownOpen: false
+    }
+  },
+  methods: {
+    toggleDropdown() {
+      if (this.dropdownOpen) {
+        this.dropdownOpen = false
+      } else {
+        this.dropdownOpen = true
+      }
+    }
+  },
 }
 </script>
