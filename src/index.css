@@ -16,6 +16,10 @@
     input {
         @apply bg-gray-900 text-sm text-gray-400 transition border border-gray-800 focus:outline-none focus:border-gray-600 rounded py-1 px-2 appearance-none
     }
+
+    label {
+        @apply text-white
+    }
 }
 
 @layer components {

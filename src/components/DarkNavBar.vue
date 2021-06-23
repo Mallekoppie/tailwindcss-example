@@ -6,14 +6,14 @@
 
       <div class="w-1/2 pl-2 md:pl-0">
         <a class="text-gray-100 text-base xl:text-xl no-underline hover:no-underline font-bold" href="#">
-          <i class="fas fa-moon text-blue-400 pr-3"></i> Admin Dark Mode
+          <i class="fas fa-moon text-blue-400 pr-3"></i> Sample Controls
         </a>
       </div>
       <div class="w-1/2 pr-0">
         <div class="flex relative inline-block float-right">
 
           <div class="relative text-sm text-gray-100">
-            <button id="userButton" class="flex items-center focus:outline-none mr-3">
+           <button id="userButton" class="flex items-center focus:outline-none mr-3">
                <span
                    class="hidden md:inline-block text-gray-100">Hi, User</span>
               <svg class="pl-2 h-2 fill-current text-gray-100" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +39,7 @@
                 </li>
               </ul>
             </div>
+
           </div>
 
 
@@ -61,17 +62,20 @@
            id="nav-content">
         <ul class="list-reset lg:flex flex-1 items-center px-4 md:px-0">
           <li class="mr-6 my-2 md:my-0">
-            <a class="block py-1 md:py-3 pl-1 align-middle text-blue-400 no-underline hover:text-gray-100 border-b-2 border-blue-400 hover:border-blue-400">
-              <router-link to="/" class="fas fa-home fa-fw mr-3 text-blue-400">
+            <a class="block py-1 md:py-3 pl-1 align-middle text-gray-400 no-underline hover:text-gray-100 border-b-2 border-blue-400 hover:border-blue-400">
+              <router-link to="/">
+                <i class="fa fa-envelope fa-fw mr-3"></i>
                 <span
-                    class="pb-1 md:pb-0 text-sm">Home</span></router-link>
+                    class="pb-1 md:pb-0 text-sm">Home</span>
+              </router-link>
 
             </a>
           </li>
           <li class="mr-6 my-2 md:my-0">
             <a
                 class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-pink-400">
-              <router-link to="/buttons" class="fas fa-home fa-fw mr-3 text-blue-400">
+              <router-link to="/buttons">
+                <i class="fa fa-envelope fa-fw mr-3"></i>
                 <span class="pb-1 md:pb-0 text-sm">Buttons</span>
               </router-link>
 
@@ -81,7 +85,8 @@
             <a
                 class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-purple-400">
               <router-link to="/forms">
-                <i class="fa fa-envelope fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Forms</span>
+                <i class="fa fa-envelope fa-fw mr-3"></i>
+                <span class="pb-1 md:pb-0 text-sm">Forms</span>
               </router-link>
             </a>
           </li>
@@ -125,7 +130,3 @@ export default {
   name: "DarkNavBar"
 }
 </script>
-
-<style scoped>
-
-</style>

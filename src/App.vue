@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black-alt font-sans leading-normal tracking-normal mx-auto h-screen">
+  <div class="bg-black-alt font-sans tracking-normal mx-auto h-screen">
     <div>
       <DarkNavBar/>
     </div>
@@ -8,9 +8,7 @@
         <div >
           <router-view/>
         </div>
-
       </div>
-
     </div>
   </div>
 </template>
