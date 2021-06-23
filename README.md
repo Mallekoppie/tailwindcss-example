@@ -30,3 +30,7 @@ Install compatibility mode and then upgrade once other dependencies have been up
 npm uninstall tailwindcss postcss autoprefixer
 npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 ```
+
+# Icons
+Go Here for Icons:  
+https://www.tailwindtoolbox.com/icons
